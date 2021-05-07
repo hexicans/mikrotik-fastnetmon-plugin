@@ -35,19 +35,7 @@ This is the first version, you are welcome to add more features.
 
 3. Set executable bit ```sudo chmod +x /etc/fastnetmon/scripts/notify_about_attack.sh```
 
-4. For FastNetMon Advanced, specify this script as callback: 
-
-```
-sudo fcli set main notify_script_enabled enable
-sudo fcli set main notify_script_path /etc/fastnetmon/scripts/notify_about_attack.sh
-sudo fcli set main notify_script_format text
-sudo fcli commit
-```
-And disable passing details to this script:
-```
-sudo fcli set main notify_script_pass_details disable
-sudo fcli commit
-```
+4. Enable SSH port 22 on your router
 
 Changelog
 ---------
